@@ -1,0 +1,114 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Warna latar belakang halaman */
+}
+
+/* Wrapper untuk konten utama */
+.wrapper {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Rata tengah konten */
+    padding: 0 20px; /* Padding untuk memberi ruang di sekitar konten */
+}
+
+/* Header styling */
+.header {
+    background: #0000d4;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden; /* Mengatur overflow agar animasi sparkle tetap terlihat di dalam header */
+    margin-bottom: 2rem; /* Tambahkan margin bawah untuk jarak dari bagian selanjutnya */
+}
+
+/* Teks pada header */
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Section styling */
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Style untuk bagian "About Me", "My Projects", dan "Contact Me" */
+.about,
+.projects,
+.contact {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: left; /* Teks rata kiri */
+}
+
+/* Efek hover untuk bagian "About Me", "My Projects", dan "Contact Me" */
+.about:hover,
+.projects:hover,
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555; /* Warna teks label untuk kontras */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #0000d4;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0000b3; /* Warna hover yang sedikit lebih gelap */
+}
+
+/* Footer styling */
+.footer {
+    background: #0000d4;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
